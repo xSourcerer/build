@@ -1,9 +1,10 @@
 #! /bin/sh
 
 crave run --no-patch -- "
+rm -rf .repo/local_manifests
 repo init -u https://github.com/Evolution-X/manifest.git --depth 1 -b udc --git-lfs
 /opt/crave/resync.sh
-git clone https://github.com/xSourcerer/local_manifests --depth 1 -b main .repo/local_manifests
+git clone https://github.com/xSourcerer/local_manifests --depth 1 -b evo .repo/local_manifests
 /opt/crave/resync.sh
 . build/envsetup.sh
 lunch lineage_surya-userdebug
