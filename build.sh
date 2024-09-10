@@ -1,6 +1,8 @@
 #! /bin/sh
 
 rm -rf .repo/local_manifests
+
+rm -rf kernel/xiaomi/surya
 rm -rf vendor/xiaomi/surya
 rm -rf vendor/xiaomi/sm6150-common
 rm -rf device/xiaomi/surya
