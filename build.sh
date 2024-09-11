@@ -17,10 +17,12 @@ git submodule init
 git submodule update --recursive
 
 /opt/crave/resync.sh
-croot
+
 export BUILD_BROKEN_DUP_RULES=true
-. build/envsetup.sh
+source build/envsetup.sh
+
+croot # move to the root directory of project
 
 lunch lineage_surya-userdebug
-
+# make clean
 m evolution
