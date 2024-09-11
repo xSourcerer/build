@@ -12,7 +12,7 @@ repo init -u https://github.com/Evolution-X/manifest.git --depth 1 -b udc --git-
 git clone https://github.com/xSourcerer/local_manifests --depth 1 -b crd .repo/local_manifests
 
 /opt/crave/resync.sh
-
+export BUILD_BROKEN_DUP_RULES=true
 . build/envsetup.sh
 
 lunch lineage_surya-userdebug
