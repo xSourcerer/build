@@ -11,14 +11,19 @@ repo init -u https://github.com/Evolution-X/manifest.git --depth 1 -b udc --git-
 
 git clone https://github.com/xSourcerer/local_manifests --depth 1 -b crd .repo/local_manifests
 
+/opt/crave/resync.sh
+
 #git clone --recursive https://github.com/crdroidandroid/android_kernel_xiaomi_surya kernel/xiaomi/surya
+PROJECT_ROOT=$(pwd)
 cd kernel/xiaomi/surya
 git submodule init
 git submodule update --recursive
 
-/opt/crave/resync.sh
+cd $PROJECT_ROOT
 
 export BUILD_BROKEN_DUP_RULES=true
+export BUILD_USERNAME=Saki
+export BUILD_HOST=crave
 source build/envsetup.sh
 
 croot # move to the root directory of project
