@@ -24,14 +24,11 @@ cd $PROJECT_ROOT
 export BUILD_BROKEN_DUP_RULES=true
 export BUILD_USERNAME=Saki
 export BUILD_HOSTNAME=crave
+source build/envsetup.sh
 
 croot && git clone https://github.com/Evolution-X/vendor_evolution-priv_keys-template vendor/evolution-priv/keys
 cd vendor/evolution-priv/keys
 ./keys.sh
-
-cd $PROJECT_ROOT
-
-source build/envsetup.sh
 
 croot # move to the root directory of project
 
