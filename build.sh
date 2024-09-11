@@ -23,7 +23,7 @@ cd $PROJECT_ROOT
 
 export BUILD_BROKEN_DUP_RULES=true
 export BUILD_USERNAME=Saki
-export BUILD_HOST=crave
+export BUILD_HOSTNAME=crave
 source build/envsetup.sh
 
 croot # move to the root directory of project
