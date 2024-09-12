@@ -6,6 +6,7 @@ rm -rf kernel/xiaomi/*
 rm -rf vendor/xiaomi/*
 rm -rf device/xiaomi/*
 rm -rf hardware/xiaomi
+rm -rf vendor/evolution-priv
 
 repo init -u https://github.com/Evolution-X/manifest.git --depth 1 -b udc --git-lfs
 
@@ -26,8 +27,7 @@ export BUILD_USERNAME=Saki
 export BUILD_HOSTNAME=crave
 source build/envsetup.sh
 
-croot && rm -rf vendor/evolution-priv
-git clone https://github.com/Evolution-X/vendor_evolution-priv_keys-template vendor/evolution-priv/keys
+croot && git clone https://github.com/Evolution-X/vendor_evolution-priv_keys-template vendor/evolution-priv/keys
 cd vendor/evolution-priv/keys
 ./keys.sh
 
