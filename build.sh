@@ -26,7 +26,8 @@ export BUILD_USERNAME=Saki
 export BUILD_HOSTNAME=crave
 source build/envsetup.sh
 
-croot && git clone https://github.com/Evolution-X/vendor_evolution-priv_keys-template vendor/evolution-priv/keys
+croot && rm -rf vendor/evolution-priv
+git clone https://github.com/Evolution-X/vendor_evolution-priv_keys-template vendor/evolution-priv/keys
 cd vendor/evolution-priv/keys
 ./keys.sh
 
