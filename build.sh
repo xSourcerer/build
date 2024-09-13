@@ -25,6 +25,7 @@ cd $PROJECT_ROOT
 export BUILD_BROKEN_DUP_RULES=true
 export BUILD_USERNAME=Saki
 export BUILD_HOSTNAME=crave
+export WITH_GMS=false # exclude google apps
 source build/envsetup.sh
 
 croot && git clone https://github.com/Evolution-X/vendor_evolution-priv_keys-template vendor/evolution-priv/keys
